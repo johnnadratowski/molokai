@@ -24,3 +24,12 @@ There is also an alternative scheme under development for color terminals which 
 let g:rehash256 = 1
 ```
 
+## Customizations
+
+I've added color names to comments in the code, added some better comments.  Added a section at the end for customization.
+
+I've augmented the code a bit to add coloring for language-specific things.
+
+Languages:
+
+* Pug
