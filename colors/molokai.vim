@@ -26,6 +26,12 @@ else
     let s:molokai_original = 0
 endif
 
+if exists("g:molokai_override_bg")
+    let s:molokai_override_bg = g:molokai_override_bg
+else
+    let s:molokai_override_bg = 0
+endif
+
 
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
@@ -114,7 +120,11 @@ hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 """""""""""""""""""""""""""
 
 if s:molokai_original == 1
-   hi Normal          guifg=#F8F8F2 guibg=#272822
+   if s:molokai_override_bg == 1
+    hi Normal          guifg=#F8F8F2 guibg=#272822
+   else
+    hi Normal          guifg=#F8F8F2 guibg=none
+   end
    hi Comment         guifg=#75715E
    hi CursorLine                    guibg=#3E3D32
    hi CursorLineNr    guifg=#FD971F               gui=none
@@ -124,7 +134,11 @@ if s:molokai_original == 1
    hi NonText         guifg=#75715E
    hi SpecialKey      guifg=#75715E
 else
-   hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
+   if s:molokai_override_bg == 1
+    hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
+   else
+    hi Normal          guifg=#F8F8F2 guibg=none
+   end
    hi Comment         guifg=#7E8E91
    hi CursorLine                    guibg=#293739
    hi CursorLineNr    guifg=#FD971F               gui=none
@@ -144,11 +158,19 @@ end
 
 if &t_Co > 255
    if s:molokai_original == 1
-      hi Normal                   ctermbg=234
+      if s:molokai_override_bg == 1
+        hi Normal                   ctermbg=234
+      else
+        hi Normal                   ctermbg=none
+      end
       hi CursorLine               ctermbg=235   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    else
-      hi Normal       ctermfg=252 ctermbg=233
+      if s:molokai_override_bg == 1
+        hi Normal       ctermfg=252 ctermbg=233
+      else
+        hi Normal       ctermfg=252 ctermbg=none
+      end
       hi CursorLine               ctermbg=234   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    endif

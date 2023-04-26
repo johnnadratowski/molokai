@@ -19,6 +19,11 @@ If you prefer the scheme to match the original monokai background color, put thi
 let g:molokai_original = 1
 ```
 
+If you do not want to override the terminal background color, you can set this
+```
+let g:molokai_override_bg = 1
+```
+
 There is also an alternative scheme under development for color terminals which attempts to bring the 256 color version as close as possible to the the default (dark) GUI version. To access, add this to your .vimrc:
 ```
 let g:rehash256 = 1
