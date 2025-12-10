@@ -123,7 +123,7 @@ if s:molokai_original == 1
    if s:molokai_override_bg == 1
     hi Normal          guifg=#F8F8F2 guibg=#272822
    else
-    hi Normal          guifg=#F8F8F2 guibg=none
+    hi Normal          guifg=#F8F8F2 guibg=NONE
    end
    hi Comment         guifg=#75715E
    hi CursorLine                    guibg=#3E3D32
@@ -137,7 +137,7 @@ else
    if s:molokai_override_bg == 1
     hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
    else
-    hi Normal          guifg=#F8F8F2 guibg=none
+    hi Normal          guifg=#F8F8F2 guibg=NONE
    end
    hi Comment         guifg=#7E8E91
    hi CursorLine                    guibg=#293739
@@ -161,7 +161,7 @@ if &t_Co > 255
       if s:molokai_override_bg == 1
         hi Normal                   ctermbg=234
       else
-        hi Normal                   ctermbg=none
+        hi Normal                   ctermbg=NONE
       end
       hi CursorLine               ctermbg=235   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
@@ -169,7 +169,7 @@ if &t_Co > 255
       if s:molokai_override_bg == 1
         hi Normal       ctermfg=252 ctermbg=233
       else
-        hi Normal       ctermfg=252 ctermbg=none
+        hi Normal       ctermfg=252 ctermbg=NONE
       end
       hi CursorLine               ctermbg=234   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
@@ -233,7 +233,7 @@ if &t_Co > 255
        hi SpellBad                ctermbg=52
        hi SpellCap                ctermbg=17
        hi SpellLocal              ctermbg=17
-       hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
+       hi SpellRare  ctermfg=NONE ctermbg=NONE  cterm=reverse
    endif
    hi Statement       ctermfg=161               cterm=bold
    hi StatusLine      ctermfg=238 ctermbg=253
