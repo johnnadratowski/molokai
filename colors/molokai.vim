@@ -41,7 +41,7 @@ hi Delimiter       guifg=#8F8F8F
 hi DiffAdd         guifg=#A6E22E guibg=#2B3D2B
 hi DiffChange                    guibg=#3C3920
 hi DiffDelete      guifg=#F92672 guibg=#3C1F26
-hi DiffText        guifg=#F8F8F2 guibg=#5C502B gui=bold
+hi DiffText        guifg=#FD971F guibg=#5C502B gui=bold
 
 hi Directory       guifg=#A6E22E               gui=bold
 hi Error           guifg=#E6DB74 guibg=#1E0010
@@ -340,7 +340,7 @@ if &t_Co > 255
    hi DiffAdd         ctermfg=118 ctermbg=22
    hi DiffChange                  ctermbg=58
    hi DiffDelete      ctermfg=161 ctermbg=52
-   hi DiffText        ctermfg=252 ctermbg=94  cterm=bold
+   hi DiffText        ctermfg=208 ctermbg=94  cterm=bold
 
    hi Directory       ctermfg=118               cterm=bold
    hi Error           ctermfg=219 ctermbg=89
