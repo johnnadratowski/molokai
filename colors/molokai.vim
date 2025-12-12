@@ -38,10 +38,10 @@ hi iCursor         guifg=#000000 guibg=#F8F8F0
 hi Debug           guifg=#BCA3A3               gui=bold
 hi Define          guifg=#66D9EF
 hi Delimiter       guifg=#8F8F8F
-hi DiffAdd                       guibg=#13354A
-hi DiffChange      guifg=#89807D guibg=#4C4745
-hi DiffDelete      guifg=#960050 guibg=#1E0010
-hi DiffText        guifg=#F8F8F2 guibg=#4C4745 gui=italic,bold
+hi DiffAdd         guifg=#A6E22E guibg=#2B3D2B
+hi DiffChange                    guibg=#3C3920
+hi DiffDelete      guifg=#F92672 guibg=#3C1F26
+hi DiffText        guifg=#F8F8F2 guibg=#5C502B gui=bold
 
 hi Directory       guifg=#A6E22E               gui=bold
 hi Error           guifg=#E6DB74 guibg=#1E0010
@@ -337,10 +337,10 @@ if &t_Co > 255
    hi Define          ctermfg=81
    hi Delimiter       ctermfg=241
 
-   hi DiffAdd                     ctermbg=24
-   hi DiffChange      ctermfg=181 ctermbg=239
-   hi DiffDelete      ctermfg=162 ctermbg=53
-   hi DiffText        ctermfg=252 ctermbg=102 cterm=bold
+   hi DiffAdd         ctermfg=118 ctermbg=22
+   hi DiffChange                  ctermbg=58
+   hi DiffDelete      ctermfg=161 ctermbg=52
+   hi DiffText        ctermfg=252 ctermbg=94  cterm=bold
 
    hi Directory       ctermfg=118               cterm=bold
    hi Error           ctermfg=219 ctermbg=89
